@@ -16,7 +16,6 @@
 		59908214245C266000AB2DF7 /* DataManipulatorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59908213245C266000AB2DF7 /* DataManipulatorAPI.swift */; };
 		59908217245C36EF00AB2DF7 /* USCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59908216245C36EF00AB2DF7 /* USCurrent.swift */; };
 		59B451A3246ACA5600CA7201 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B451A2246ACA5600CA7201 /* WelcomeViewController.swift */; };
-		59B451A5246ACA6A00CA7201 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B451A4246ACA6A00CA7201 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		59908213245C266000AB2DF7 /* DataManipulatorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulatorAPI.swift; sourceTree = "<group>"; };
 		59908216245C36EF00AB2DF7 /* USCurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USCurrent.swift; sourceTree = "<group>"; };
 		59B451A2246ACA5600CA7201 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		59B451A4246ACA6A00CA7201 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 				59908200245C261200AB2DF7 /* SceneDelegate.swift */,
 				59908202245C261200AB2DF7 /* ViewController.swift */,
 				59B451A2246ACA5600CA7201 /* WelcomeViewController.swift */,
-				59B451A4246ACA6A00CA7201 /* AboutViewController.swift */,
 				59908204245C261200AB2DF7 /* Main.storyboard */,
 				59908207245C261200AB2DF7 /* Assets.xcassets */,
 				59908209245C261200AB2DF7 /* LaunchScreen.storyboard */,
@@ -169,7 +166,6 @@
 				59908203245C261200AB2DF7 /* ViewController.swift in Sources */,
 				599081FF245C261200AB2DF7 /* AppDelegate.swift in Sources */,
 				59908217245C36EF00AB2DF7 /* USCurrent.swift in Sources */,
-				59B451A5246ACA6A00CA7201 /* AboutViewController.swift in Sources */,
 				59908201245C261200AB2DF7 /* SceneDelegate.swift in Sources */,
 				59908214245C266000AB2DF7 /* DataManipulatorAPI.swift in Sources */,
 				59B451A3246ACA5600CA7201 /* WelcomeViewController.swift in Sources */,

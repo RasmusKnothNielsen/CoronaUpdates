@@ -20,7 +20,8 @@ class DataManipulatorAPI {
               if let data = data {
                 do {
                     let res = try JSONDecoder().decode(Array<CurrentUS>.self, from: data)
-                    self.currentUS = USCurrent(positive: res.first!.positive, negative: res.first!.negative, pending: res.first!.pending, hospitalizedCurrently: res.first!.hospitalizedCurrently, hospitalizedCumulative: res.first!.hospitalizedCumulative, recovered: res.first!.recovered, death: res.first!.death)
+                    print(res)
+                    self.currentUS = USCurrent(positive: res.first!.positive, negative: res.first!.negative, pending: res.first!.pending, hospitalizedCurrently: res.first!.hospitalizedCurrently, hospitalizedCumulative: res.first!.hospitalizedCumulative, recovered: res.first!.recovered, death: res.first!.death, onVentilatorCurrently: res.first!.onVentilatorCurrently)
                     
                 } catch let error {
                     print(error)
@@ -39,6 +40,7 @@ class DataManipulatorAPI {
         let hospitalizedCumulative: Int
         let recovered: Int
         let death: Int
+        let onVentilatorCurrently: Int
     }
     
 }

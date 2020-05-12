@@ -22,9 +22,22 @@ class ViewController: UIViewController {
 
     @IBAction func getDataButtonPressed(_ sender: UIButton) {
         print(dataManipulator.currentUS.positive)
-        let string = "Positive: \(String(dataManipulator.currentUS.positive)) \n" +
-            "Negative: \(String(dataManipulator.currentUS.negative)) \n" +
-            "Pending: \(String(dataManipulator.currentUS.pending)) \n"
+        
+        let positive = dataManipulator.currentUS.positive
+        let negative = dataManipulator.currentUS.negative
+        let pending = dataManipulator.currentUS.pending
+        let hospitalizedCurrently = dataManipulator.currentUS.hospitalizedCurrently
+        let onVentilatorsCurrently = dataManipulator.currentUS.onVentilatorCurrently
+        let percentOfPeopleOnVentilators: Double = (Double(onVentilatorsCurrently) / Double(hospitalizedCurrently)) * 100
+        
+        let string = "Total number of cases:\n" +
+            "Positive: \(String(positive)) \n" +
+            "Negative: \(String(negative)) \n" +
+            "Pending: \(String(pending)) \n\n" +
+            "Currently Hospitalized: \(String(hospitalizedCurrently))\n" +
+        "Currently on Ventilator: \(String(onVentilatorsCurrently))\n" +
+            "Thus \(String(Double(round(percentOfPeopleOnVentilators))))% of all hospitalized people are on a Ventilator currently"
+        
         textView.text = string
     }
 }

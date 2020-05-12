@@ -17,12 +17,13 @@ class USCurrent {
     var hospitalizedCumulative: Int = 0
     var recovered: Int = 0
     var death: Int = 0
+    var onVentilatorCurrently = 0
     
     init() {
         
     }
     
-    init(positive: Int, negative: Int, pending: Int, hospitalizedCurrently: Int, hospitalizedCumulative: Int, recovered: Int, death: Int) {
+    init(positive: Int, negative: Int, pending: Int, hospitalizedCurrently: Int, hospitalizedCumulative: Int, recovered: Int, death: Int, onVentilatorCurrently: Int) {
         self.positive = positive
         self.negative = negative
         self.pending = pending
@@ -30,6 +31,7 @@ class USCurrent {
         self.hospitalizedCumulative = hospitalizedCumulative
         self.recovered = recovered
         self.death = death
+        self.onVentilatorCurrently = onVentilatorCurrently
     }
     
 
