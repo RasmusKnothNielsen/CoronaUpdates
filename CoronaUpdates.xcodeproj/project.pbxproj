@@ -13,6 +13,10 @@
 		59908206245C261200AB2DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59908204245C261200AB2DF7 /* Main.storyboard */; };
 		59908208245C261200AB2DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59908207245C261200AB2DF7 /* Assets.xcassets */; };
 		5990820B245C261200AB2DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59908209245C261200AB2DF7 /* LaunchScreen.storyboard */; };
+		59908214245C266000AB2DF7 /* DataManipulatorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59908213245C266000AB2DF7 /* DataManipulatorAPI.swift */; };
+		59908217245C36EF00AB2DF7 /* USCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59908216245C36EF00AB2DF7 /* USCurrent.swift */; };
+		59B451A3246ACA5600CA7201 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B451A2246ACA5600CA7201 /* WelcomeViewController.swift */; };
+		59B451A5246ACA6A00CA7201 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B451A4246ACA6A00CA7201 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		59908207245C261200AB2DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5990820A245C261200AB2DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5990820C245C261200AB2DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59908213245C266000AB2DF7 /* DataManipulatorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulatorAPI.swift; sourceTree = "<group>"; };
+		59908216245C36EF00AB2DF7 /* USCurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USCurrent.swift; sourceTree = "<group>"; };
+		59B451A2246ACA5600CA7201 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		59B451A4246ACA6A00CA7201 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		599081FD245C261200AB2DF7 /* CoronaUpdates */ = {
 			isa = PBXGroup;
 			children = (
+				59908215245C36C500AB2DF7 /* model */,
+				59908212245C262500AB2DF7 /* Data */,
 				599081FE245C261200AB2DF7 /* AppDelegate.swift */,
 				59908200245C261200AB2DF7 /* SceneDelegate.swift */,
 				59908202245C261200AB2DF7 /* ViewController.swift */,
+				59B451A2246ACA5600CA7201 /* WelcomeViewController.swift */,
+				59B451A4246ACA6A00CA7201 /* AboutViewController.swift */,
 				59908204245C261200AB2DF7 /* Main.storyboard */,
 				59908207245C261200AB2DF7 /* Assets.xcassets */,
 				59908209245C261200AB2DF7 /* LaunchScreen.storyboard */,
 				5990820C245C261200AB2DF7 /* Info.plist */,
 			);
 			path = CoronaUpdates;
+			sourceTree = "<group>";
+		};
+		59908212245C262500AB2DF7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				59908213245C266000AB2DF7 /* DataManipulatorAPI.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		59908215245C36C500AB2DF7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				59908216245C36EF00AB2DF7 /* USCurrent.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +168,11 @@
 			files = (
 				59908203245C261200AB2DF7 /* ViewController.swift in Sources */,
 				599081FF245C261200AB2DF7 /* AppDelegate.swift in Sources */,
+				59908217245C36EF00AB2DF7 /* USCurrent.swift in Sources */,
+				59B451A5246ACA6A00CA7201 /* AboutViewController.swift in Sources */,
 				59908201245C261200AB2DF7 /* SceneDelegate.swift in Sources */,
+				59908214245C266000AB2DF7 /* DataManipulatorAPI.swift in Sources */,
+				59B451A3246ACA5600CA7201 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
