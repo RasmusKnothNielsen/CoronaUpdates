@@ -18,12 +18,13 @@ class USCurrent {
     var recovered: Int = 0
     var death: Int = 0
     var onVentilatorCurrently = 0
+    var lastModified = ""
     
     init() {
         
     }
     
-    init(positive: Int, negative: Int, pending: Int, hospitalizedCurrently: Int, hospitalizedCumulative: Int, recovered: Int, death: Int, onVentilatorCurrently: Int) {
+    init(positive: Int, negative: Int, pending: Int, hospitalizedCurrently: Int, hospitalizedCumulative: Int, recovered: Int, death: Int, onVentilatorCurrently: Int, lastModified: String) {
         self.positive = positive
         self.negative = negative
         self.pending = pending
@@ -32,6 +33,7 @@ class USCurrent {
         self.recovered = recovered
         self.death = death
         self.onVentilatorCurrently = onVentilatorCurrently
+        self.lastModified = lastModified
     }
     
 

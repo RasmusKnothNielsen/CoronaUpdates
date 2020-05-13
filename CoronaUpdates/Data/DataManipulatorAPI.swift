@@ -24,7 +24,7 @@ class DataManipulatorAPI {
                 do {
                     let res = try JSONDecoder().decode(Array<CurrentUS>.self, from: data)
                     print(res)
-                    self.currentUS = USCurrent(positive: res.first!.positive, negative: res.first!.negative, pending: res.first!.pending, hospitalizedCurrently: res.first!.hospitalizedCurrently, hospitalizedCumulative: res.first!.hospitalizedCumulative, recovered: res.first!.recovered, death: res.first!.death, onVentilatorCurrently: res.first!.onVentilatorCurrently)
+                    self.currentUS = USCurrent(positive: res.first!.positive, negative: res.first!.negative, pending: res.first!.pending, hospitalizedCurrently: res.first!.hospitalizedCurrently, hospitalizedCumulative: res.first!.hospitalizedCumulative, recovered: res.first!.recovered, death: res.first!.death, onVentilatorCurrently: res.first!.onVentilatorCurrently, lastModified: res.first!.lastModified)
                     // Signal that the data fetch is done
                     semaphore.signal()
                     
@@ -51,6 +51,7 @@ class DataManipulatorAPI {
         let recovered: Int
         let death: Int
         let onVentilatorCurrently: Int
+        let lastModified: String
     }
     
 }

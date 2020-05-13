@@ -15,26 +15,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corona-virus" translatesAutoresizingMaskIntoConstraints="NO" id="msp-DS-flm">
-                                <rect key="frame" x="87" y="419" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="corona-virus" translatesAutoresizingMaskIntoConstraints="NO" id="msp-DS-flm">
+                                <rect key="frame" x="97" y="419" width="221" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DuP-1P-2pU"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="CORONA NEWS" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-eN-F1W">
-                                <rect key="frame" x="87" y="240" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-Ap-guz">
+                                <rect key="frame" x="87" y="739" width="240" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="nJ3-bF-coQ"/>
+                                </constraints>
+                                <string key="text">Version: 1.0.0
+© Rasmus Knoth Nielsen, 2020
+</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-eN-F1W">
+                                <rect key="frame" x="87" y="241" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="isB-Hl-PQx"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="CORONA NEWS">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" metaFont="system" size="28"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="msp-DS-flm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="0nB-pA-FOo"/>
+                            <constraint firstItem="msp-DS-flm" firstAttribute="top" secondItem="DUv-eN-F1W" secondAttribute="bottom" constant="50" id="AhY-JA-VBg"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="leading" secondItem="pLw-Ap-guz" secondAttribute="leading" id="BdE-J7-xxc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pLw-Ap-guz" secondAttribute="bottom" constant="75" id="J5b-dF-1h5"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="PGy-ov-fk2"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PHT-EH-Ur4"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="centerX" secondItem="msp-DS-flm" secondAttribute="centerX" id="XMn-fs-RBF"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="djB-5A-cpv"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="trailing" secondItem="pLw-Ap-guz" secondAttribute="trailing" id="fAa-ds-nJ6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
