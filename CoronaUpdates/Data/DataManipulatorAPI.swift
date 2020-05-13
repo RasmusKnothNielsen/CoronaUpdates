@@ -12,7 +12,10 @@ class DataManipulatorAPI {
     
     var currentUS: USCurrent = USCurrent()
     
-    func getUsCurrent()   {
+    func getUsCurrent() -> USCurrent {
+        
+        // Semaphore
+        let semaphore = DispatchSemaphore(value: 0)
         
 
         if let url = URL(string: "http://covidtracking.com/api/us") {
@@ -22,13 +25,20 @@ class DataManipulatorAPI {
                     let res = try JSONDecoder().decode(Array<CurrentUS>.self, from: data)
                     print(res)
                     self.currentUS = USCurrent(positive: res.first!.positive, negative: res.first!.negative, pending: res.first!.pending, hospitalizedCurrently: res.first!.hospitalizedCurrently, hospitalizedCumulative: res.first!.hospitalizedCumulative, recovered: res.first!.recovered, death: res.first!.death, onVentilatorCurrently: res.first!.onVentilatorCurrently)
+                    // Signal that the data fetch is done
+                    semaphore.signal()
                     
                 } catch let error {
                     print(error)
                 }
                }
            }).resume()
+            
+            // Wait until the data is fetched
+            _ = semaphore.wait(timeout: .distantFuture)
+            
         }
+        return currentUS
     }
     
     struct CurrentUS: Codable {

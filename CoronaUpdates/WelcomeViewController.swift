@@ -13,11 +13,15 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var additionalTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textView.text = "Welcome to Covid-19 Tracker!"
-        // Do any additional setup after loading the view.
+        
+        additionalTextView.text = "This app was created to give the users a near live updating platform on how Corona is evolving in the U.S."
+        
     }
     
 
