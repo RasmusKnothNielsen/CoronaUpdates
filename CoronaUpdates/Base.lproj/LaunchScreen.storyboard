@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -18,26 +18,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="corona-virus" translatesAutoresizingMaskIntoConstraints="NO" id="msp-DS-flm">
                                 <rect key="frame" x="97" y="419" width="221" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="DuP-1P-2pU"/>
+                                    <constraint firstAttribute="height" constant="128" id="1mv-Sy-rlk"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-Ap-guz">
-                                <rect key="frame" x="87" y="739" width="240" height="48"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="nJ3-bF-coQ"/>
-                                </constraints>
-                                <string key="text">Version: 1.0.0
-© Rasmus Knoth Nielsen, 2020
-</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-eN-F1W">
                                 <rect key="frame" x="87" y="241" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="isB-Hl-PQx"/>
+                                    <constraint firstAttribute="height" constant="128" id="iuU-5B-n5f"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="CORONA NEWS">
@@ -50,18 +37,31 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pLw-Ap-guz">
+                                <rect key="frame" x="87" y="707" width="240" height="67"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="fXL-PC-7mD"/>
+                                </constraints>
+                                <string key="text">Version: 1.0.0
+© Rasmus Knoth Nielsen, 2020
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="msp-DS-flm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="0nB-pA-FOo"/>
-                            <constraint firstItem="msp-DS-flm" firstAttribute="top" secondItem="DUv-eN-F1W" secondAttribute="bottom" constant="50" id="AhY-JA-VBg"/>
-                            <constraint firstItem="DUv-eN-F1W" firstAttribute="leading" secondItem="pLw-Ap-guz" secondAttribute="leading" id="BdE-J7-xxc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pLw-Ap-guz" secondAttribute="bottom" constant="75" id="J5b-dF-1h5"/>
-                            <constraint firstItem="DUv-eN-F1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="PGy-ov-fk2"/>
-                            <constraint firstItem="DUv-eN-F1W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PHT-EH-Ur4"/>
-                            <constraint firstItem="DUv-eN-F1W" firstAttribute="centerX" secondItem="msp-DS-flm" secondAttribute="centerX" id="XMn-fs-RBF"/>
-                            <constraint firstItem="DUv-eN-F1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="djB-5A-cpv"/>
-                            <constraint firstItem="DUv-eN-F1W" firstAttribute="trailing" secondItem="pLw-Ap-guz" secondAttribute="trailing" id="fAa-ds-nJ6"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="1yF-Q8-3cT"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="4Zk-Hr-urN"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="trailing" secondItem="pLw-Ap-guz" secondAttribute="trailing" id="CaB-dD-LjK"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hr6-Dw-53G"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="centerX" secondItem="msp-DS-flm" secondAttribute="centerX" id="RRN-r5-YBe"/>
+                            <constraint firstItem="DUv-eN-F1W" firstAttribute="leading" secondItem="pLw-Ap-guz" secondAttribute="leading" id="XJ5-P7-CQZ"/>
+                            <constraint firstItem="msp-DS-flm" firstAttribute="top" secondItem="DUv-eN-F1W" secondAttribute="bottom" constant="50" id="bZ4-WI-Dfe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pLw-Ap-guz" secondAttribute="bottom" constant="88" id="fKs-RE-S7h"/>
+                            <constraint firstItem="msp-DS-flm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="sU1-dI-YWr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
